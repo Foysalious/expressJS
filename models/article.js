@@ -1,18 +1,19 @@
 let mongoose = require('mongoose');
 
-//Article Schema
+// Article Schema
 let articleSchema = mongoose.Schema({
   title:{
-    type:String,
-    required:true
+    type: String,
+    required: true
   },
   author:{
     type: String,
-    required:true
+    required: true
   },
   body:{
     type: String,
-    required:true
+    required: true
   }
 });
-let Article = module.exports= mongoose.model('Article',articleSchema);
+
+let Article = module.exports = mongoose.model('Article', articleSchema);
